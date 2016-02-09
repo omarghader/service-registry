@@ -7,7 +7,8 @@
     "test-browser": "./node_modules/.bin/karma start karma.conf.js",
     "test-node": "./node_modules/.bin/jasmine",
     "eslint": "./node_modules/.bin/eslint --ext .js lib spec karma.conf.js",
-    "test-all": "npm run eslint && npm run test-node && npm run test-browser",
+    "test-all": "npm run build && npm run eslint && npm run test-node && npm run test-browser",
+    "build": "./node_modules/.bin/babel src --out-dir lib",
     "prebublish": "npm run test-all"
   },
   "repository": {
@@ -26,11 +27,11 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/skygate/service-registry/issues"
-
   },
   "homepage": "https://github.com/skygate/service-registry#readme",
   "devDependencies": {
     "babel": "^6.5.1",
+    "babel-cli": "^6.5.1",
     "babel-core": "^6.5.1",
     "babel-loader": "^6.2.2",
     "babel-preset-es2015": "^6.5.0",

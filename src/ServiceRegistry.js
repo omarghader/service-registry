@@ -17,7 +17,7 @@ class Service {
     }
 }
 
-class ServiceRegistry {
+export class ServiceRegistry {
     constructor () {
         this.servicesMap = new Map();
     }
@@ -37,7 +37,3 @@ class ServiceRegistry {
         }
     }
 }
-
-module.exports = {
-    ServiceRegistry: ServiceRegistry
-};
