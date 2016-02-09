@@ -7,13 +7,11 @@ module.exports = function (config) {
 
         // frameworks to use
         // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-        frameworks: ['jasmine'/*, 'es6-shim'*/],
+        frameworks: ['jasmine'],
 
 
         // list of files / patterns to load in the browser
         files: [
-            //'node_modules/es7-shim/dist/es7-shim.js',
-            //'node_modules/es6-symbol/implement.js'
             'spec/ServiceRegistrySpec.js'
         ],
 
@@ -34,8 +32,6 @@ module.exports = function (config) {
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
             'spec/ServiceRegistrySpec.js': ['webpack', 'sourcemap']
-            //'node_modules/es7-shim/dist/es7-shim.js': ['webpack'],
-            //'node_modules/es6-symbol/implement.js': ['webpack']
         },
 
         webpack: {

@@ -1,5 +1,5 @@
 {
-  "name": "service-registry",
+  "name": "sg-service-registry",
   "version": "0.1.0",
   "description": "Simple service registry",
   "main": "lib/ServiceRegistry.js",
