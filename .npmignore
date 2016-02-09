@@ -1,0 +1,5 @@
+.idea
+spec
+karma.conf.js
+.gitignore
+.eslintrc.json
